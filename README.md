@@ -9,7 +9,7 @@ End-to-end NLP pipeline analyzing 10,000+ scraped social media posts to extract 
 
 ```
 social-media-profiling/
-├── 01_data_collection.ipynb      # API scraping & CSV export
+├── 01_data_collection.ipynb      # web scraping & CSV export
 ├── 02_engagement_analysis.ipynb  # Linear regression on engagement signals
 ├── 03_nlp_analysis.ipynb         # NLP preprocessing, NER & topic modeling
 ├── trump_tweets.csv              # Generated dataset (run notebook 01 first)
@@ -21,7 +21,7 @@ social-media-profiling/
 ## Pipeline Overview
 
 ### 01 — Data Collection
-- Scrapes tweet data from [The Trump Archive](https://www.thetrumparchive.com/) via its underlying Elasticsearch API
+- Scrapes tweet data from [The Trump Archive](https://www.thetrumparchive.com/)
 - Collects 10,000 tweets with fields: `text`, `favorites`, `retweets`, `date`, `isDeleted`, `isRetweet`, `device`
 - Exports to `trump_tweets.csv`
 
